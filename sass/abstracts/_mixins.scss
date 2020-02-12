@@ -1,0 +1,10 @@
+// clearfix always goes in a after psuedo element
+
+@mixin clearfix {
+  &::after {
+    content: '';
+    // emptybecause we do not want to see the fix on the page
+    display: table;
+    clear: both;
+  }
+}

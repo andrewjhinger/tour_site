@@ -1,0 +1,16 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  /* bestpractice to force inheritance rather than use box-sizing on universal selector */
+  box-sizing: inherit;
+}
+html {
+  /* defines what 1 rem is */
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
